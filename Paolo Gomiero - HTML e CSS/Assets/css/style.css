@@ -1,0 +1,150 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6d0d5;
+  font: helvetica;
+}
+p {
+  margin-bottom: 50px;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  background-color: #003399;
+  width: 100%;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box {
+  align-items: flex-start;
+  width: 50%;
+}
+.header-box {
+  display: flex;
+  text-transform: uppercase;
+  color: #d6d0d5;
+  width: 50%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.voice {
+  display: flex;
+  font: 30px ;
+  font-weight: bold;
+  padding-bottom: 5px;
+  align-items: flex-end;
+}
+
+a:link {
+  text-decoration: none;
+  color: #d6d0d5;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: orange;
+}
+
+.structure {
+  display: flex;
+  width:100%;
+  padding:20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.structure-box {
+  display: flex;
+  color: #003399;
+  padding: 50px;
+  width: 100%;
+  justify-content: center;
+  font-family: "Tangerine";
+  font-weight: bold;
+  font-size: 50px;
+  align-content: center;
+  text-align-last:center;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #003399;
+  width: 100%;
+}
+.social-container {
+  padding-left: 100px;
+  padding-top: 70px;
+  line-height: 2;
+  color:#d6d0d5;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+.text-box {
+  padding: 50px;
+  font-size: 20px;
+  color: #003399;
+  text-align: justify;
+  line-height: 30px;
+}
+.text-box .fa{
+  color:#003399;
+}
+.text-box a:link {
+  color:#003399;
+  text-decoration: underline;
+}
+.text-box a:visited {
+  color:purple;
+}
+.text-box-portfolio {
+  padding: 50px;
+  font-size: 20px;
+  color: #003399;
+  text-align: justify;
+  line-height: 30px;
+  height:400px;
+}
+
+.dropdown:hover .features-menu {
+  display: block;
+  flex-direction: column;
+  background: #003399;
+  border-radius: 5px;
+  width: 100%;
+  position:absolute;
+  z-index: 1;
+}
+.features-menu li {
+  border-bottom: 1px solid #FFF;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+  color: #d6d0d9;
+  }
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown >span {
+  z-index:2;
+  position:relative;
+  cursor:pointer;
+}
+.features-menu {
+  display: none;
+}
